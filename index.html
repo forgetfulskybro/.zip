@@ -1,0 +1,109 @@
+<html class="html">
+
+<head>
+  <!-- JavaScript -->
+  <script async src="https://arc.io/widget.min.js#E68jKSCV"></script>
+
+  <!-- Meta Data -->
+  <title>Upload Zip Folder</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- CSS -->
+  <style>
+    .row .column {
+      margin-left: 4%;
+    }
+
+    .row .column:first-child {
+      margin-left: 0;
+    }
+
+    .row .one-full.column {
+      width: 95%;
+    }
+
+    .row .one-half.column {
+      width: 48%;
+    }
+
+    .row .one-third.column {
+      width: 30.6666666667%;
+    }
+
+    .row .one-fourth.column {
+      width: 21.9999999999%;
+    }
+
+    .row::after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+
+    .container {
+      box-sizing: border-box;
+      margin: 0 auto;
+      margin-bottom: 2.5em;
+      margin-top: 1.5em;
+      padding: 0 2em;
+      position: relative;
+      width: 100%;
+    }
+
+    @media (max-width: 550px) {
+      .container {
+        margin: 0;
+        margin-bottom: 2.5em;
+        margin-top: 1.5em;
+        padding: 0;
+        width: 100%;
+      }
+
+      .nav-container.no-nav {
+        display: block;
+        height: 3em;
+        position: static;
+      }
+
+      .row .column {
+        margin-left: 0;
+      }
+
+      .row .one-half.column,
+      .row .one-third.column,
+      .row .one-fourth.column {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 800px) {
+      .container {
+        max-width: 1100px;
+      }
+    }
+
+    .upload {
+      cursor: pointer;
+      background-color: #282828;
+      height: 100px;
+      width: 170px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+
+<!-- Start of HTML body -->
+
+<body>
+  <div class="container">
+    <div class="boxes">
+      <input type="file" id="folder" accept=".zip" hidden>
+      <label class="upload" for="folder"><img
+          src="https://cdn.discordapp.com/attachments/945100320973934653/960655864073707540/cloud-arrow.png"><br>Upload
+        a .zip folder</label>
+    </div>
+  </div>
+</body>
+
+</html>
